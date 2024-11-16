@@ -6,13 +6,13 @@
 
 /* 宏定义 --------------------------------------------------------------------*/
 
-#define NRF24L01_SPI_CS_ENABLE()    HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin,GPIO_PIN_RESET)	//PB12
+#define NRF24L01_SPI_CS_ENABLE()    HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin,GPIO_PIN_RESET)	
 #define NRF24L01_SPI_CS_DISABLE()   HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin,GPIO_PIN_SET)
 
-#define NRF24L01_CE_LOW()   HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin,GPIO_PIN_RESET)					//PA11
+#define NRF24L01_CE_LOW()   HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin,GPIO_PIN_RESET)					
 #define NRF24L01_CE_HIGH() HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin,GPIO_PIN_SET)
 
-#define NRF24L01_IRQ_PIN_READ()  HAL_GPIO_ReadPin(IRQ_GPIO_Port, IRQ_Pin)									//PA8
+#define NRF24L01_IRQ_PIN_READ()  HAL_GPIO_ReadPin(IRQ_GPIO_Port, IRQ_Pin)								
 
 
 // NRF24L01发送接收数据宽度定义
